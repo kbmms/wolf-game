@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.area-game {
+    width: 480px;
+    position: relative;
+    height: 365px;
+}
+
+
+
+/*BACKGROUND - FLORESTA*/
+.background-game {
+    width: 480px;
+    height: 315px;
+    position: absolute;
+    background-image: url(../imagens/florestgif.gif);
+    background-repeat: repeat-x;
+    background-position: 0px 100%;
+    animation: animabg 8s linear infinite;
+    -webkit-animation: animabg 8s linear infinite;
+    -moz-animation: animabg 8s linear infinite;
+    -o-animation: animabg 8s linear infinite;
+}
+
+@keyframes animabg {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -499px 0px;
+    }
+}
+
+@-moz-keyframes animabg {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -499px 0px;
+    }
+}
+
+@-webkit-keyframes animabg {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -499px 0px;
+    }
+}
+
+@-o-keyframes animabg {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -499px 0px;
+    }
+}
+/*BACKGROUND - FLORESTA*/
+
+
+
+
+
+/*CHÃO*/
+.chao {
+    width: 480px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../imagens/chao.png);
+    animation: animachao 480ms linear infinite;
+    -webkit-animation: animachao 480ms infinite;
+    -moz-animation: animachao 480ms infinite;
+    -o-animation: animachao 480ms infinite;
+}
+
+@keyframes animachao {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -480px 0px;
+    }
+}
+
+@-moz-keyframes animachao {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -480px 0px;
+    }
+}
+
+@-webkit-keyframes animachao {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -480px 0px;
+    }
+}
+/*CHÃO*/
+
+
+
+/*WOLF*/
+#wolf {
+    width: 107px;
+    height: 68px;
+    top: 258px;
+    left: 20px;
+    position: relative;
+    background-image: url(../imagens/dog.png);
+    animation: animawolf 0.5s steps(5) infinite;
+    -webkit-animation: animawolf 0.5s steps(5) infinite;
+    -moz-animation: animawolf 0.5s steps(5) infinite;
+}
+
+@keyframes animawolf {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -579px;
+    }
+}
+/*WOLF*/
